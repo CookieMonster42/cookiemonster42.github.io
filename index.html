@@ -2,34 +2,39 @@
 <html lang="en">
   <head>
     <title>Axels Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-      <a class="navbar-brand" href="#">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Messages</a>
-          </li>
-          <li class="nav-item dropdown">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-            </div>
-          </li>
-        </ul>
+    <div class="navbar">
+      <div class="ui three item menu">
+        <a class="item" onClick="handleClick()" >Bio</a>
+        <a class="item active">Passed Projects</a>
+        <a class="item">Upcoming Projects</a>
       </div>
     </div>
-</body>
+    <div class="container">
+      <div class="ui grid equal width">
+        <div class="two column row">
+          <div class="column">
+            <img src="./imgs/social-reading.club.png">
+          </div>
+          <div class="column project-info">
+            <h3><a href="http://www.social-reading.club/">Social-Reading</a></h3>
+            <p>
+              This was a one week project at <a href="https://www.lew
+              agon.com/berlin">le wagon</a> were we have implemented an online
+              platform to organize book discussions and physical meetings.
+              Although the platform works and it is still online we did not pursue the idea.
+              If you want to check it out you have to register first.
+            </p>
+            <div class="project-team">
+              <p>The Team: Nicolas, Nova, Stella, Anja and Me</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/index.js"></script>
 </html>
-<html>
