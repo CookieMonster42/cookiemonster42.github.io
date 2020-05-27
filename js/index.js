@@ -23,7 +23,6 @@ const handleClick = (event) => {
   const targetVal = event.target.classList[0];
   siblingsButton.map(sibling => {
     sibling.classList.remove('active');
-    event.target.classList.toggle('active');
     siblingsContent.map(content => {
       if(content.classList.contains('notShow') && content.classList.contains(targetVal)) {
         content.classList.toggle('notShow')
@@ -34,4 +33,5 @@ const handleClick = (event) => {
       }
     });
   });
+    event.target.classList.toggle('active');
 }

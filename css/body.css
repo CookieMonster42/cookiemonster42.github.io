@@ -1,3 +1,14 @@
+
+.ui.grid{
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+p{
+  font-size: 16px;
+}
 .container{
   width: 75vw;
   margin-left: auto;
@@ -21,5 +32,4 @@
 }
 .two.column.row{
   margin: 5px;
-  border: solid 1px grey;
 }
