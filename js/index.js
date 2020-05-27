@@ -1,9 +1,10 @@
-const menuButton1 = document.querySelector('.ui.three.item.menu>.item');
+const menuButton1 = document.querySelector('.ui.two.item.menu>.item');
+const content1 = document.querySelector('.content');
 
-var getSiblings = function (elem) {
+let getSiblings = function (elem) {
   // Setup siblings array and get the first sibling
-  var siblings = [];
-  var sibling = elem.parentNode.firstElementChild;
+  let siblings = [];
+  let sibling = elem.parentNode.firstElementChild;
   // Loop through each sibling and push to the array
   siblings.push(sibling);
   while (sibling) {
@@ -15,13 +16,22 @@ var getSiblings = function (elem) {
   return siblings;
 };
 
-const siblings = getSiblings(menuButton1);
+const siblingsButton = getSiblings(menuButton1);
+const siblingsContent = getSiblings(content1);
 
-siblings.map(sibling => {
-  console.log(sibling.innerText);
-});
-
-const handleClick(event) {
-  event.preventDefault();
-  console.log(event.target.value)
+const handleClick = (event) => {
+  const targetVal = event.target.classList[0];
+  siblingsButton.map(sibling => {
+    sibling.classList.remove('active');
+    event.target.classList.toggle('active');
+    siblingsContent.map(content => {
+      if(content.classList.contains('notShow') && content.classList.contains(targetVal)) {
+        content.classList.toggle('notShow')
+        content.style.display = 'block';
+      } else if(!content.classList.contains('notShow') && !content.classList.contains(targetVal)) {
+        content.style.display = 'none';
+        content.classList.toggle('notShow')
+      }
+    });
+  });
 }

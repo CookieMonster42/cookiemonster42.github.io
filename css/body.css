@@ -4,7 +4,6 @@
   margin-right: auto;
   margin-top: 10px;
   padding: 15px;
-  border: solid 1px grey;
 }
 
 .column > img{
@@ -15,4 +14,12 @@
 }
 .column.project-info{
   padding-top: 1rem;
+}
+
+.notShow{
+  display: none;
+}
+.two.column.row{
+  margin: 5px;
+  border: solid 1px grey;
 }

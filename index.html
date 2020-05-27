@@ -7,29 +7,66 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="ui three item menu">
-        <a class="item" onClick="handleClick()" >Bio</a>
-        <a class="item active">Passed Projects</a>
-        <a class="item">Upcoming Projects</a>
+      <div class="ui two item menu">
+        <a class="bio item button active" onClick="handleClick(event);" >Bio</a>
+        <a class="passed-projects item button" onClick="handleClick(event);">Passed Projects</a>
       </div>
     </div>
-    <div class="container">
-      <div class="ui grid equal width">
-        <div class="two column row">
-          <div class="column">
-            <img src="./imgs/social-reading.club.png">
+    <div class="container-content">
+      <div class="container content passed-projects notShow">
+        <div class="ui grid equal width">
+          <div class="two column row">
+            <div class="column">
+              <img src="./imgs/social-reading.club.png">
+            </div>
+            <div class="column project-info">
+              <h3><a href="http://www.social-reading.club/">Social-Reading</a></h3>
+              <p>
+                This was a one week project at <a href="https://www.lew
+                agon.com/berlin">le wagon</a> were we have implemented an online
+                platform to organize book discussions and physical meetings.
+                Although the platform works and it is still online we did not pursue the idea.
+                If you want to check it out you have to register first.
+              </p>
+              <div class="project-team">
+                <p>The Team: Nicolas, Nova, Stella, Anja and Me</p>
+              </div>
+            </div>
           </div>
-          <div class="column project-info">
-            <h3><a href="http://www.social-reading.club/">Social-Reading</a></h3>
-            <p>
-              This was a one week project at <a href="https://www.lew
-              agon.com/berlin">le wagon</a> were we have implemented an online
-              platform to organize book discussions and physical meetings.
-              Although the platform works and it is still online we did not pursue the idea.
-              If you want to check it out you have to register first.
-            </p>
-            <div class="project-team">
-              <p>The Team: Nicolas, Nova, Stella, Anja and Me</p>
+          <div class="two column row">
+            <div class="column">
+              <img src="./imgs/social-reading.club.png">
+            </div>
+            <div class="column project-info">
+              <h3><a href="http://www.social-reading.club/">Social-Reading</a></h3>
+              <p>
+                This was a one week project at <a href="https://www.lew
+                agon.com/berlin">le wagon</a> were we have implemented an online
+                platform to organize book discussions and physical meetings.
+                Although the platform works and it is still online we did not pursue the idea.
+                If you want to check it out you have to register first.
+              </p>
+              <div class="project-team">
+                <p>The Team: Nicolas, Nova, Stella, Anja and Me</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container content bio">
+        <div class="ui grid equal width">
+          <div class="two column row">
+            <div class="column">
+              <img src="./imgs/social-reading.club.png">
+            </div>
+            <div class="column project-info">
+              <h3><a href="http://www.social-reading.club/">Social-Reading</a></h3>
+              <p>
+                BIO BIO BIO
+              </p>
+              <div class="project-team">
+                <p>The Team: Nicolas, Nova, Stella, Anja and Me</p>
+              </div>
             </div>
           </div>
         </div>
