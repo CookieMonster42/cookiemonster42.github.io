@@ -1,0 +1,25 @@
+.container{
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.column > img{
+  margin: 5px;
+}
+.column{
+  background-color: white;
+}
+.column.project-info{
+  padding-top: 1rem;
+}
+
+.notShow{
+  display: none;
+}
+.two.column.row{
+  margin: 5px;
+  border: solid 1px grey;
+}

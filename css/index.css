@@ -1,4 +1,3 @@
-@import url("css/navbar.css");
-body{
-  width: 75%;
-}
+@import url("./navbar.css");
+@import url('./body.css');
+@import url('./ui.css');
