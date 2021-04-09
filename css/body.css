@@ -1,15 +1,16 @@
-
-.ui.grid{
+.ui.grid {
   margin-top: -1rem;
   margin-bottom: -1rem;
   margin-left: -1rem;
   margin-right: -1rem;
 }
-
-p{
+.container-content {
+  width: 70%;
+}
+p {
   font-size: 16px;
 }
-.container{
+.container {
   width: 75vw;
   margin-left: auto;
   margin-right: auto;
@@ -17,19 +18,19 @@ p{
   padding: 15px;
 }
 
-.column > img{
+.column > img {
   margin: 5px;
 }
-.column{
+.column {
   background-color: white;
 }
-.column.project-info{
+.column.project-info {
   padding-top: 1rem;
 }
 
-.notShow{
+.notShow {
   display: none;
 }
-.two.column.row{
+.two.column.row {
   margin: 5px;
 }
